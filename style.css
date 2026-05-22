@@ -1,14 +1,32 @@
-/* Fondo general */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   background-color: #0a1a2f;
   color: #e0e8f0;
-  margin: 0;
-  padding: 0;
+  line-height: 1.6;
   background-image: radial-gradient(circle at 20% 20%, #0f2a4a 0%, #0a1a2f 100%);
 }
 
-/* Botón principal tipo WhatsApp */
+/* Hero */
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #cfd8e3;
+}
+
+/* Botón principal */
 .btn-whatsapp {
   display: inline-block;
   background: linear-gradient(90deg, #00e0c6, #00b4ff);
@@ -41,28 +59,41 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Lista de servicios */
-.services-list {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
+/* Servicios */
+.services h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
-.services-list li {
-  margin: 0.8rem 0;
-  padding-left: 1.2rem;
-  position: relative;
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-.services-list li::before {
-  content: "•";
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
   color: #00e0c6;
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
-/* Tarjeta de diagnóstico */
+.card p {
+  font-size: 0.95rem;
+  color: #cfd8e3;
+}
+
+/* Diagnósticos */
 .diagnostico {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
@@ -81,7 +112,7 @@ body {
 }
 
 .score {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
   margin: 1rem 0;
@@ -94,8 +125,8 @@ body {
 
 /* Indicador circular */
 .circle {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   background: conic-gradient(#00e0c6 270deg, #1a2f4a 0deg);
   display: flex;
@@ -105,11 +136,34 @@ body {
   box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
+/* Footer */
+footer {
+  background: #0a1a2f;
+  color: #cfd8e3;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #00e0c6;
+  text-decoration: none;
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
   .btn-whatsapp {
     width: 100%;
     text-align: center;
+  }
+  .service-grid {
+    grid-template-columns: 1fr;
   }
   .diagnostico {
     width: 90%;
