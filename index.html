@@ -25,51 +25,47 @@
   <section class="services" style="padding:2rem;">
     <h2 style="text-align:center; color:#00e0c6;">Nuestros Servicios</h2>
     <div class="service-grid">
-      <div class="card">
-        <h3>Asesoría Crediticia</h3>
-        <p>Orientación profesional para mejorar tu perfil crediticio y acceder a mejores oportunidades.</p>
-      </div>
-      <div class="card">
-        <h3>Análisis Financiero</h3>
-        <p>Evaluación detallada de tu situación económica para tomar decisiones estratégicas.</p>
-      </div>
-      <div class="card">
-        <h3>Orientación Financiera</h3>
-        <p>Guía personalizada para organizar tus finanzas y planificar el futuro.</p>
-      </div>
-      <div class="card">
-        <h3>Refinanciamiento</h3>
-        <p>Alternativas claras para reestructurar deudas y aliviar tu carga financiera.</p>
-      </div>
-      <div class="card">
-        <h3>Reporte Crediticio</h3>
-        <p>Acceso a información actualizada sobre tu historial crediticio.</p>
-      </div>
-      <div class="card">
-        <h3>Educación Financiera</h3>
-        <p>Capacitaciones y recursos para el uso responsable de productos financieros.</p>
-      </div>
-      <div class="card">
-        <h3>Acompañamiento y Seguimiento</h3>
-        <p>Soporte continuo para que avances con confianza en tus decisiones financieras.</p>
-      </div>
+      <div class="card"><h3>Asesoría Crediticia</h3><p>Mejora tu perfil crediticio con orientación profesional.</p></div>
+      <div class="card"><h3>Análisis Financiero</h3><p>Evaluación detallada de tu situación económica.</p></div>
+      <div class="card"><h3>Orientación Financiera</h3><p>Guía personalizada para organizar tus finanzas.</p></div>
+      <div class="card"><h3>Refinanciamiento</h3><p>Alternativas claras para reestructurar deudas.</p></div>
+      <div class="card"><h3>Reporte Crediticio</h3><p>Acceso a información actualizada sobre tu historial.</p></div>
+      <div class="card"><h3>Educación Financiera</h3><p>Capacitaciones para el uso responsable de productos.</p></div>
+      <div class="card"><h3>Acompañamiento</h3><p>Soporte continuo en tus decisiones financieras.</p></div>
+    </div>
+  </section>
+
+  <!-- Bloques de información -->
+  <section class="info-blocks">
+    <div class="info-block">
+      <h3>Atención Personalizada</h3>
+      <p>Nos adaptamos a cada caso con transparencia y confidencialidad.</p>
+    </div>
+    <div class="info-block">
+      <h3>Consultas Online</h3>
+      <p>Accede a nuestros servicios desde cualquier lugar vía WhatsApp.</p>
+    </div>
+    <div class="info-block">
+      <h3>Planes Flexibles</h3>
+      <p>Opciones de asesoría según tus necesidades y presupuesto.</p>
     </div>
   </section>
 
   <!-- Diagnósticos -->
   <section style="padding:2rem; text-align:center;">
     <h2 style="color:#00e0c6;">Diagnósticos Financieros</h2>
+
     <div class="diagnostico">
       <h2>Evaluación Crediticia</h2>
-      <div class="circle">
-        <div class="score">720</div>
+      <div class="circle" style="--percent:75%;">
+        <div class="score">75%</div>
       </div>
       <p class="status">Perfil saludable</p>
     </div>
 
     <div class="diagnostico">
       <h2>Capacidad de Pago</h2>
-      <div class="circle">
+      <div class="circle" style="--percent:85%;">
         <div class="score">85%</div>
       </div>
       <p class="status">Nivel óptimo</p>
@@ -77,19 +73,31 @@
 
     <div class="diagnostico">
       <h2>Riesgo Financiero</h2>
-      <div class="circle" style="background:conic-gradient(#ff4d4d 180deg, #1a2f4a 0deg);">
-        <div class="score">Moderado</div>
+      <div class="circle" style="--percent:40%; background:conic-gradient(#ff4d4d var(--percent,0%), #1a2f4a 0);">
+        <div class="score">40%</div>
       </div>
-      <p class="status">Requiere seguimiento</p>
+      <p class="status">Moderado</p>
     </div>
   </section>
 
+  <!-- Beneficios -->
+  <section class="benefits">
+    <h2>Beneficios de elegirnos</h2>
+    <ul>
+      <li>✅ Atención transparente y confidencial</li>
+      <li>✅ Asesoría profesional y responsable</li>
+      <li>✅ Opciones claras para refinanciamiento</li>
+      <li>✅ Educación financiera accesible</li>
+      <li>✅ Acompañamiento continuo en tus decisiones</li>
+    </ul>
+  </section>
+
   <!-- Footer -->
-  <footer style="text-align:center; padding:1rem; background:#0a1a2f; color:#e0e8f0;">
+  <footer>
     <p>© 2026 Consultoría Financiera - Atención personalizada y responsable</p>
-    <p>WhatsApp: <a href="https://wa.me/51906744388" style="color:#00e0c6;">+51 906 744 388</a></p>
+    <p>WhatsApp: <a href="https://wa.me/51906744388">+51 906 744 388</a></p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-          </html>
+  </html>
